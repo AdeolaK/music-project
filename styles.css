@@ -27,7 +27,6 @@ header p {
 }
 
 .pads {
-  background: lightblue;
   width: 100%;
   display: flex;
 }
@@ -35,4 +34,29 @@ header p {
 .pads div {
   height: 100px;
   width: 100px;
+  flex: 1;
+}
+
+.pad1 {
+  background: #8ef6e4;
+}
+
+.pad2 {
+  background: #9896f1;
+}
+
+.pad3 {
+  background: #d59bf6;
+}
+
+.pad4 {
+  background: #edb1f1;
+}
+
+.pad5 {
+  background: #a8e6cf;
+}
+
+.pad6 {
+  background: #fdffab;
 }
