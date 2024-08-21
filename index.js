@@ -15,6 +15,18 @@ window.addEventListener("load", () => {
     pad.addEventListener("click", function () {
       sounds[index].currentTime = 0;
       sounds[index].play();
+
+      createBubble(index);
     });
   });
+
+  let createBubble = (index) => {
+    let bubble = document.createElement("div");
+    visual.appendChild(bubble);
+    bubble.style.backgroundColor = colors[index];
+    bubble.style.animation = "jump 1s ease";
+    bubble.addEventListener("animationend", function () {
+      visiual.removeChild(this);
+    })
+  };
 });
