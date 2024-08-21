@@ -1,6 +1,15 @@
 window.addEventListener("load", () => {
   let sounds = document.querySelectorAll(".sound");
   let pads = document.querySelectorAll(".pads div");
+  let visual = document.querySelector(".visual");
+  let colors = [
+    "#8ef6e4",
+    "#9896f1",
+    "#d59bf6",
+    "#edb1f1",
+    "#a8e6cf",
+    "#fdffab",
+  ];
 
   pads.forEach((pad, index) => {
     pad.addEventListener("click", function () {
